@@ -12,7 +12,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping("/saludo/{nombre}")
+	@GetMapping("/{nombre}")
     public String obtenerSaludo(@PathVariable String nombre) {
         return "Hola, " + nombre + ". Bienvenido a mi aplicación!";
     }
